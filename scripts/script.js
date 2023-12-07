@@ -29,6 +29,8 @@ function func() {
 
   });
 
+
+
 }
 
 var swiper = new Swiper(".main_slider", {
@@ -100,5 +102,27 @@ $(window).resize(func);
 
 
 $(window).init(func)
+
+    // Табы
+    if ($(window).width() > 700) {
+
+    $('.tabs__content > div').hide();
+
+    $('.tabs__links a').click(function () {
+      if ($(this).parent().hasClass('active')) return;
+      $(this).parent().addClass('active').siblings().removeClass('active');
+      target = $(this).attr('href');
+      $(target).show().siblings().hide();
+  
+      return false;
+    });
+  
+    $('.tabs__links li:first-child a').click();
+    }
+    // Табы
+
+    $('.mob__head').click(function () {
+      $(this).toggleClass('active').siblings('ul').slideToggle();
+    })
 
 Fancybox.bind();
