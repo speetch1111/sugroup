@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="fonts/RF/style.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -29,7 +30,7 @@
         </div>
     </header>
 
-    <section class="about" style="background-image: url('img/about-bg.jpg')">
+    <section class="about" id="about" style="background-image: url('img/about-bg.jpg')">
         <div class="wrapper">
             <div class="about__flex">
                 <div class="section__suptitle">
@@ -38,19 +39,24 @@
                 <h2 class="section__title about__title">
                     15 лет ответственного отношения к строительству
                 </h2>
-                <ul class="about__nav">
-                    <li><a href="#!">Узнать больше</a></li>
-                    <li><a href="#!">История</a></li>
-                    <li><a href="#!">Принципы</a></li>
-                    <li><a href="#!">Заказчики</a></li>
-                    <li><a href="#!">Команда</a></li>
-                </ul>
-            </div>
+                <div class="about__nav-wrap">
+                    <ul class="about__nav">
+                        <li>
+                            <a href="#history" class="more">Узнать больше</a>
+                            <a href="#about" class="back">Наверх</a>
+                        </li>
+                        <li><a href="#history">История</a></li>
+                        <li><a href="#prinicple">Принципы</a></li>
+                        <li><a href="#partners">Заказчики</a></li>
+                        <li><a href="#team">Команда</a></li>
+                    </ul>
+                </div>
 
+            </div>
         </div>
     </section>
 
-    <section class="history">
+    <section class="history waypoint" id="history">
         <div class="history__wrap" style="background-image: url('img/history-bg.jpg')">
             <div class="wrapper">
                 <div class="section__suptitle">
@@ -173,9 +179,9 @@
                 </div>
             </div>
         </div>
-    </section> 
+    </section>
 
-     <section class="principle" style="background-image: url(img/principle-bg.jpg);">
+    <section class="principle waypoint" id="prinicple" style="background-image: url(img/principle-bg.jpg);">
         <div class="wrapper">
             <div class="section__suptitle">
                 Ответственное управление
@@ -184,7 +190,7 @@
                 Шесть простых принципов, которые помогают нашей команде создавать знаковые объекты
             </h2>
             <div class="principle__items">
-                <div class="principle__item">
+                <div class="principle__item wow fadeInUp">
                     <div class="principle__item-number">
                         1
                     </div>
@@ -201,7 +207,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="principle__item">
+                <div class="principle__item wow fadeInUp">
                     <div class="principle__item-number">
                         2
                     </div>
@@ -216,7 +222,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="principle__item">
+                <div class="principle__item wow fadeInUp">
                     <div class="principle__item-number">
                         3
                     </div>
@@ -233,7 +239,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="principle__item">
+                <div class="principle__item wow fadeInUp">
                     <div class="principle__item-number">
                         4
                     </div>
@@ -251,7 +257,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="principle__item">
+                <div class="principle__item wow fadeInUp">
                     <div class="principle__item-number">
                         5
                     </div>
@@ -268,7 +274,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="principle__item">
+                <div class="principle__item wow fadeInUp">
                     <div class="principle__item-number">
                         6
                     </div>
@@ -285,20 +291,20 @@
                 </div>
             </div>
         </div>
-    </section> 
+    </section>
 
-    <section class="partners">
+    <section class="partners waypoint" id="partners">
         <div class="wrapper">
-            <div class="section__suptitle">
+            <div class="section__suptitle wow fadeInUp">
                 Долгосрочное партнерство
             </div>
-            <h2 class="section__title partners__title">
+            <h2 class="section__title partners__title wow fadeInUp">
                 cоздаем комфортные отношения
                 с заказчиками, сохраняя объективность
                 и настроенность на результат
             </h2>
             <div class="partners__flex">
-                <div class="parnters__item">
+                <div class="parnters__item wow fadeInUp">
                     <div class="partners__item-suptitle">
                         Девелопер
                     </div>
@@ -313,7 +319,7 @@
                         насчитывается более 50 проектов.
                     </div>
                 </div>
-                <div class="parnters__item">
+                <div class="parnters__item wow fadeInUp">
                     <div class="partners__item-suptitle">
                         Девелопер
                     </div>
@@ -328,7 +334,7 @@
                         наследие, высокое искусство и современные технологии.
                     </div>
                 </div>
-                <div class="parnters__item">
+                <div class="parnters__item wow fadeInUp">
                     <div class="partners__item-suptitle">
                         Девелопер
                     </div>
@@ -343,7 +349,7 @@
                         жилой и коммерческой недвижимости разных классов.
                     </div>
                 </div>
-                <div class="parnters__item">
+                <div class="parnters__item wow fadeInUp">
                     <div class="partners__item-suptitle">
                         Сеть отелей
                     </div>
@@ -358,7 +364,7 @@
                         тяжелого бетона.
                     </div>
                 </div>
-                <div class="parnters__item">
+                <div class="parnters__item wow fadeInUp">
                     <div class="partners__item-suptitle">
                         Производственная компания
                     </div>
@@ -373,7 +379,7 @@
                         тяжелого бетона.
                     </div>
                 </div>
-                <div class="parnters__item">
+                <div class="parnters__item wow fadeInUp">
                     <div class="partners__item-suptitle">
                         Кондитерско-булочный комбинат
                     </div>
@@ -388,7 +394,7 @@
                         дополнительных вида продукции
                     </div>
                 </div>
-                <div class="parnters__item">
+                <div class="parnters__item wow fadeInUp">
                     <div class="partners__item-suptitle">
                         Некоммерческая организация
                     </div>
@@ -402,7 +408,7 @@
                         Фонд развития Центра разработки и коммерциализации новых технологий.
                     </div>
                 </div>
-                <div class="parnters__item">
+                <div class="parnters__item wow fadeInUp">
                     <div class="partners__item-suptitle">
                         Завод
                     </div>
@@ -416,7 +422,7 @@
                         Один из ведущих производителей сыра в Европе
                     </div>
                 </div>
-                <div class="parnters__item">
+                <div class="parnters__item wow fadeInUp">
                     <div class="partners__item-suptitle">
                         Общественная организация
                     </div>
@@ -431,7 +437,7 @@
                         организация, объединяющая общины ортодоксального иудаизма.
                     </div>
                 </div>
-                <div class="parnters__item">
+                <div class="parnters__item wow fadeInUp">
                     <div class="partners__item-suptitle">
                         Общественное пространство
                     </div>
@@ -447,7 +453,7 @@
                     </div>
                 </div>
             </div>
-            <div class="recomend">
+            <div class="recomend wow fadeInUp">
                 <div class="recomend__title">
                     Рекомендации
                 </div>
@@ -494,7 +500,7 @@
                     </div>
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
-    
+
                 </div>
 
 
@@ -502,16 +508,16 @@
         </div>
     </section>
 
-    <section class="team">
+    <section class="team waypoint" id="team">
         <div class="wrapper">
-            <div class="section__suptitle">
+            <div class="section__suptitle wow fadeInUp" >
                 Люди – наш основной капитал
             </div>
-            <h2 class="section__title team__title">
+            <h2 class="section__title team__title wow fadeInUp">
                 Весь руководящий состав и большинство членов команды остаются в компании с момента основания
             </h2>
             <div class="team__flex">
-                <div class="team__item">
+                <div class="team__item wow fadeInUp">
                     <div class="team__item-img">
                         <img src="img/team-img-1.jpg" alt="">
                     </div>
@@ -534,7 +540,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="team__item">
+                <div class="team__item wow fadeInUp">
                     <div class="team__item-img">
                         <img src="img/team-img-2.jpg" alt="">
                     </div>
@@ -561,7 +567,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="team__item">
+                <div class="team__item wow fadeInUp">
                     <div class="team__item-img">
                         <img src="img/team-img-3.jpg" alt="">
                     </div>
@@ -583,7 +589,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="team__item">
+                <div class="team__item wow fadeInUp">
                     <div class="team__item-img">
                         <img src="img/team-img-4.jpg" alt="">
                     </div>
@@ -606,7 +612,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="team__item">
+                <div class="team__item wow fadeInUp">
                     <div class="team__item-img">
                         <img src="img/team-img-5.jpg" alt="">
                     </div>
@@ -632,7 +638,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="team__item">
+                <div class="team__item wow fadeInUp">
                     <div class="team__item-img">
                         <img src="img/team-img-6.jpg" alt="">
                     </div>
@@ -658,7 +664,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="team__item">
+                <div class="team__item wow fadeInUp">
                     <div class="team__item-img">
                         <img src="img/team-img-7.jpg" alt="">
                     </div>
@@ -681,7 +687,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="team__item">
+                <div class="team__item wow fadeInUp">
                     <div class="team__item-img">
                         <img src="img/team-img-8.jpg" alt="">
                     </div>
@@ -704,7 +710,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="team__item">
+                <div class="team__item wow fadeInUp">
                     <div class="team__item-img">
                         <img src="img/team-img-9.jpg" alt="">
                     </div>
@@ -728,7 +734,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="team__item">
+                <div class="team__item wow fadeInUp">
                     <div class="team__item-img">
                         <img src="img/team-img-10.jpg" alt="">
                     </div>
@@ -752,7 +758,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="team__item">
+                <div class="team__item wow fadeInUp">
                     <div class="team__item-img">
                         <img src="img/team-img-11.jpg" alt="">
                     </div>
@@ -775,7 +781,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="team__item">
+                <div class="team__item wow fadeInUp">
                     <div class="team__item-img">
                         <img src="img/team-img-12.jpg" alt="">
                     </div>
@@ -796,7 +802,7 @@
                     </div>
                 </div>
             </div>
-            <div class="team__form">
+            <div class="team__form wow fadeInUp">
                 <div class="team__form-title">
                     Приглашаем профессиналов и молодых амбициозных специалистов
                 </div>
@@ -839,7 +845,7 @@
                 </form>
             </div>
         </div>
-    </section> 
+    </section>
 
     <footer style="background-image: url(img/footer_bg.jpg);">
         <div class="wrapper">
@@ -913,8 +919,14 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="scripts/wow.min.js"></script>
     <script src="scripts/jquery.fancybox-1.3.4.js"></script>
     <script src="scripts/script.js"></script>
+ 
+ <script>
+        new WOW().init();
+    </script>
+    
 </body>
 
 </html>
