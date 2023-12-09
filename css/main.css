@@ -1750,6 +1750,10 @@ footer {
     max-width: 400px; 
 }
 
+.tabs__content ul li a {
+    color: inherit;
+}
+
 .mob__head {
     display: none;
 }
