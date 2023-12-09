@@ -510,7 +510,7 @@
 
     <section class="team waypoint" id="team">
         <div class="wrapper">
-            <div class="section__suptitle wow fadeInUp" >
+            <div class="section__suptitle wow fadeInUp">
                 Люди – наш основной капитал
             </div>
             <h2 class="section__title team__title wow fadeInUp">
@@ -533,7 +533,7 @@
                         </div>
                         <div class="team__item-text">
                             Начал профессиональную деятельность в 1980 году. Участвовал в строительстве космодрома
-                            Байконур, руководил строительством более пяти миллионов квадратных метров недвижимости  в
+                            Байконур, руководил строительством более пяти миллионов квадратных метров недвижимости в
                             качестве руководителя строительного холдинга ПСП-ФАРМАН. Помимо
                             архитектуры и строительства, увлекается рыбалкой, прогулками по лесу, квадроциклами и
                             историей.
@@ -628,7 +628,7 @@
                         </div>
                         <div class="team__item-text">
                             Работал в качестве заместителя председателя в Комиссии по Градостроительству и Архитектуре.
-                            Реализовал Телецентр компании ТВЦ  на стороне Заказчика. В инвестиционно-строительном
+                            Реализовал Телецентр компании ТВЦ на стороне Заказчика. В инвестиционно-строительном
                             холдинге ПСП-ФАРМАН
                             в должности руководителя проекта построил Клубный дом Петровский бульвар 21. В SU GROUP
                             сопровождал
@@ -818,7 +818,7 @@
                     <div class="team__form-column textarea">
                         <div class="team__form-field ">
                             <textarea
-                                placeholder="Расскажите немного о себе, о ваших профессиональных навыках и о том,  почему хотите работать в нашей компании"></textarea>
+                                placeholder="Расскажите немного о себе, о ваших профессиональных навыках и о том, почему хотите работать в нашей компании"></textarea>
                         </div>
                     </div>
                     <div class="team__form-column">
@@ -910,23 +910,89 @@
                         </ul>
                     </li>
                     <li><a href="#">Компания</a></li>
-                    <li><a href="#">Контакты</a></li>
+                    <li><a class="contacts__open" href="#">Контакты</a></li>
                 </ul>
             </div>
-            <button class="close"><img src="img/close.svg" alt=""></button>
+            <div class="contacts__drop">
+                <button class="close"><img src="img/close.svg" alt=""></button>
+
+                <div class="contacts__top">
+                    <div class="contacts__text">
+                        <div class="contacts__title">
+                            Свяжитесь с нами
+                        </div>
+                        <div class="contacts__subtitle">
+                            Мы всегда рады ответить на вопросы и предоставить
+                            дополнительную информацию о компании и услугах
+                        </div>
+                    </div>
+                </div>
+                <div class="contacts__bottom">
+                    <div class="contacts__mob-info">
+                        <div class="contacts__mob-title">
+                            Мы всегда рады ответить на вопросы и предоставить 
+                            дополнительную информацию о компании и услугах
+                        </div>
+                        <div class="contacts__mob-flex">
+                             <div class="contacts__mob-img">
+                                <img src="img/contacts-mob-img.jpg" alt="">
+                             </div>
+                             <div class="contacts__mob-text">
+                                Москва, 1-й Магистральный проезд, 11с1, БЦ «Интерьер» 
+                                <span class="open__map">Посмотреть на карте</span>
+                             </div>
+                        </div>
+                        <div class="contacts__mob-links">
+                            <a class="mail" href="mailto:info@su-19.com">info@su-19.com</a>
+                            <a class="phone" href="tel:+74959374775">+7 495 937 47 75 </a>
+                         </div>
+                    </div>
+                    <form action="#!" class="contacts__form">
+                        <div class="form__title">
+                            Мы подготовим информацию и свяжемся с вами в течение  24 часов в рабочее время
+                        </div>
+                        <div class="form__field">
+                            <input type="text" placeholder="Иванов Степан">
+                        </div>
+                        <div class="form__field">
+                            <input type="tel" placeholder="+7 968 546 78 98">
+                        </div>
+                        <div class="form__field">
+                            <textarea placeholder="Укажите удобное время для звонка или просто задайте интересующий вас вопрос"></textarea>
+                        </div>
+                        <div class="form__submit">
+                            <div class="submit__text">
+                                Продолжая, вы соглашаетесь на <a href="#!">обработку персональных данных</a>
+                            </div>
+                            <div class="submit__btn">
+                                <button type="submit">Заказать звонок</button>
+                            </div>
+                        
+                        </div>
+                    </form>
+                    <div class="contacts__map map" id="map">
+                        <img src="img/map.jpg" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="main_menu_close close"><img src="img/close.svg" alt=""></button>
         </div>
     </div>
+
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="scripts/wow.min.js"></script>
     <script src="scripts/jquery.fancybox-1.3.4.js"></script>
     <script src="scripts/script.js"></script>
- 
- <script>
+
+    <script>
         new WOW().init();
     </script>
-    
+
 </body>
 
 </html>

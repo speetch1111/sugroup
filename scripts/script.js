@@ -29,8 +29,17 @@ function func() {
 
   });
 
+  var windowWidth = $(window).width();
+  containerWidth = $('.wrapper').width();
+  marginfree = (windowWidth - containerWidth) / 2;
+  
+  if ($(window).width() > 930) {
 
+  $('.contacts__bottom').css({
+    'margin-right': -marginfree
+  });
 
+  }
 }
 
 var swiper = new Swiper(".main_slider", {
@@ -55,9 +64,30 @@ var swiper = new Swiper(".recomend-slider", {
   slidesPerView: 4,
 });
 
-$('.burger, .close').on('click', function () {
+$('.burger, .main_menu_close').on('click', function () {
   $('.main_menu').toggleClass('active');
+  $('body').toggleClass('oh')
 });
+
+$('.open__map').on('click', function () {
+  $('.contacts__map').toggleClass('mob');
+  $(this).text(function(i, text){
+    return text === "Посмотреть на карте" ? "Закрыть карту" : "Посмотреть на карте";
+})
+});
+
+$('.contacts__open').on('click', function () {
+  $('.contacts__drop').addClass('open');
+  $('.contacts__map').addClass('open');
+  $('.main_menu_top h3,.main_menu_body').addClass('hidden');
+});
+
+$('.contacts__drop .close').on('click', function () {
+  $('.contacts__drop').removeClass('open');
+  $('.contacts__map').removeClass('open');
+  $('.main_menu_top h3,.main_menu_body').removeClass('hidden');
+});
+
 $('.objects_mobile_tab:first-child').on('click', function () {
   $('.objects_info').removeClass('active');
   $('.objects').addClass('active');
