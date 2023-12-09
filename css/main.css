@@ -241,7 +241,7 @@ footer p {
     transition: all 0.3s ease;
     z-index: 10;
     min-height: 740px;
-    overflow-y: auto;
+    overflow: hidden;
 }
 
 
@@ -1940,6 +1940,10 @@ footer {
 }
 
 @media(max-width: 930px) {
+    .main_menu {
+        overflow: auto;
+    }
+
     .contacts__mob-info {
         display: block;
     }
