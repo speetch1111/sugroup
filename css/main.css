@@ -1945,7 +1945,14 @@ footer {
 
 @media(max-width: 930px) {
     .main_menu {
-        overflow: auto;
+        overflow: hidden;
+        height: auto;
+        min-height: auto;
+    }
+
+    .main_menu.scroll {
+        overflow-y: auto;
+        min-height: 800px;
     }
 
     .contacts__mob-info {

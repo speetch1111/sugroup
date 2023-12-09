@@ -80,12 +80,14 @@ $('.contacts__open').on('click', function () {
   $('.contacts__drop').addClass('open');
   $('.contacts__map').addClass('open');
   $('.main_menu_top h3,.main_menu_body').addClass('hidden');
+  $('.main_menu').addClass('scroll')
 });
 
 $('.contacts__drop .close').on('click', function () {
   $('.contacts__drop').removeClass('open');
   $('.contacts__map').removeClass('open');
   $('.main_menu_top h3,.main_menu_body').removeClass('hidden');
+  $('.main_menu').removeClass('scroll')
 });
 
 $('.objects_mobile_tab:first-child').on('click', function () {
